@@ -1,0 +1,124 @@
+*{
+    padding:0px;
+    margin: 0px;
+    transition: all 250ms;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    animation: colorChange 2s infinite alternate;
+}
+
+/* Define the animation */
+@keyframes colorChange {
+    0% {
+        background-color: #ff5733; /* Red */
+    }
+    25% {
+        background-color: #33ff57; /* Green */
+    }
+    50% {
+        background-color: #3357ff; /* Blue */
+    }
+    75% {
+        background-color: #f3ff33; 
+        /* background-image: url(../../assests/images/newhouse.jpg); */
+    }
+    100% {
+        background-color: #ff33a1; /* Pink */
+    }
+}
+#login_container,#otp_container{
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    top: 170px;
+    left: 39%;
+    border-radius: 20px;
+}
+.inputs{
+    width: 80%;
+    height: 35px;
+    position: relative;
+    /* margin-top: 60px; */
+    margin-bottom: 20px;
+    left: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: transparent;    
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    top: 20%;
+    
+}
+.buttons{
+    width: 90%;
+    height: 50px;
+    left: 5%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    
+}
+#close_icon{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 4%;
+    transform: rotate(45deg);
+    font-weight: bold;
+    left: 82%;
+}
+#close_icon:hover{
+    cursor: pointer;
+    transform: rotate(765deg) scale(1.5);
+}
+#otp_inputbox{
+    color: skyblue;
+    text-align: center;
+    border-bottom: 2px solid skyblue;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+}
+#generate_otp_button{
+    background-color: royalblue;
+}
+#generate_otp_button:hover{
+    transform: scale(1.1);
+    box-shadow: inset -1px -1px 1px 1px white;
+}
+#validate_otp_button{
+    color: black;
+    background-color: lawngreen;
+}
+#validate_otp_button:hover{
+    transform: scale(1.1);
+    box-shadow: inset -1px -1px 1px 1px white;
+}
+#otp_heading{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 10px;
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+#otp_container{
+    /* background-color: rgb(149, 148, 148); */
+    display: none;
+    backdrop-filter: blur(2);
+}
+#result_container{
+    color: white;
+    display: block;
+    position: relative;
+    top: 65px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
