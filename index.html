@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Generation</title> 
+    <link rel="stylesheet" href="./OtpGeneration.css">
+    <script src="./OtpGeneration.js" defer></script>
+</head>
+<body>
+    <div id="login_container">
+        <input type="text" id="otp_inputbox" class="inputs"> <br>
+        <button id="generate_otp_button" class="inputs buttons" onclick="generateDisplayOTP()">GenerateOTP</button> <br>
+        <button id="validate_otp_button" class="inputs buttons" onclick="toValidateOTP()">ValidateOTP</button>
+        <span id="result_container"></span>
+    </div>
+    <div id="otp_container">
+        <span id="close_icon" onclick="toCloseOTPContainer()">+</span>
+        <h1 id="otp_heading"></h1>
+    </div>
+</body>
+</html>
